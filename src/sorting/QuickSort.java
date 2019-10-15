@@ -24,10 +24,7 @@ public class QuickSort {
         }
         if (end - start > 1) {
             int pivot = partition(ar, start, end);
-            System.out.println("After partition");
-            System.out.println("pivot = " + ar[pivot]);
             printArray(ar, start, end);
-            System.out.println("----");
             quickSort(ar, start, pivot - 1);
             quickSort(ar, pivot + 1, end);
         } else if (end - start == 1) {
